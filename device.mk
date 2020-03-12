@@ -16,4 +16,7 @@
 
 DEVICE_PATH := device/brcm/rpi3
 
+# Inherit rpi3 vendor
+$(call inherit-product, vendor/brcm/rpi3/rpi3-vendor.mk)
+
 $(call inherit-product, device/brcm/rpi-common/rpi.mk)
