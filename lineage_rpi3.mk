@@ -22,6 +22,11 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 include frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk
 
+# Boot animation
+TARGET_BOOTANIMATION_HALF_RES := true
+TARGET_SCREEN_WIDTH := 1280
+TARGET_SCREEN_HEIGHT := 720
+
 PRODUCT_DEVICE := rpi3
 PRODUCT_NAME := lineage_rpi3
 PRODUCT_BRAND := arpi
